@@ -9,7 +9,6 @@ import {
 } from '@/components/ui/sidebar';
 import { AppLogo } from '@/components/app-logo';
 import { SidebarNav } from '@/components/sidebar-nav';
-import { UserNav } from '@/components/user-nav';
 
 export default function AppLayout({
   children,
@@ -25,8 +24,8 @@ export default function AppLayout({
         <SidebarContent>
           <SidebarNav />
         </SidebarContent>
-        <SidebarFooter className="items-center">
-          <UserNav />
+        <SidebarFooter>
+          {/* UserNav moved to SidebarNav */}
         </SidebarFooter>
       </Sidebar>
       <SidebarInset>
