@@ -4,7 +4,6 @@ import {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
-  SidebarSeparator,
 } from '@/components/ui/sidebar';
 import { Award, LayoutDashboard, Recycle, User } from 'lucide-react';
 import { usePathname } from 'next/navigation';
@@ -37,10 +36,12 @@ export function SidebarNav() {
             </SidebarMenuButton>
           </SidebarMenuItem>
         ))}
+        <SidebarMenuItem>
+           <div className="flex justify-center w-full">
+              <UserNav />
+            </div>
+        </SidebarMenuItem>
       </SidebarMenu>
-      <div className="p-2 flex justify-center">
-         <UserNav />
-      </div>
     </div>
   );
 }
