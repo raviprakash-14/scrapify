@@ -11,7 +11,7 @@ import Link from 'next/link';
 import { UserNav } from './user-nav';
 
 const mainLinks = [
-  { href: '/estimate', label: 'Estimate Scrap', icon: Recycle },
+  { href: '/estimate', label: 'Estimate and Sell Scrap', icon: Recycle },
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/rewards', label: 'Rewards', icon: Award },
 ];
