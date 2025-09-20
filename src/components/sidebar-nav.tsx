@@ -10,8 +10,8 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 const links = [
-  { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/estimate', label: 'Estimate Scrap', icon: Recycle },
+  { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/rewards', label: 'Rewards', icon: Award },
 ];
 
