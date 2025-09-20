@@ -16,6 +16,8 @@ const mainLinks = [
   { href: '/rewards', label: 'Rewards', icon: Award },
 ];
 
+const profileLink = { href: '/profile', label: 'Profile', icon: User };
+
 export function SidebarNav() {
   const pathname = usePathname();
 
@@ -36,12 +38,25 @@ export function SidebarNav() {
             </SidebarMenuButton>
           </SidebarMenuItem>
         ))}
-        <SidebarMenuItem>
-           <div className="flex justify-center w-full">
-              <UserNav />
-            </div>
+         <SidebarMenuItem>
+            <SidebarMenuButton
+              asChild
+              isActive={pathname.startsWith(profileLink.href)}
+              tooltip={profileLink.label}
+            >
+              <Link href={profileLink.href}>
+                <profileLink.icon />
+                <span>{profileLink.label}</span>
+              </Link>
+            </SidebarMenuButton>
         </SidebarMenuItem>
       </SidebarMenu>
+
+       <div className="flex-grow" />
+
+        <div className="p-2">
+            <UserNav />
+        </div>
     </div>
   );
 }
