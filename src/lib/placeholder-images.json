@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "reward-water-bottle",
+      "description": "An eco-friendly water bottle",
+      "imageUrl": "https://picsum.photos/seed/101/600/400",
+      "imageHint": "water bottle"
+    },
+    {
+      "id": "reward-shopping-bag",
+      "description": "A reusable shopping bag",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "imageHint": "tote bag"
+    },
+    {
+      "id": "reward-gift-card",
+      "description": "A gift card",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "imageHint": "gift card"
+    },
+    {
+      "id": "reward-plant",
+      "description": "A small potted plant",
+      "imageUrl": "https://picsum.photos/seed/104/600/400",
+      "imageHint": "plant pot"
+    },
+    {
+      "id": "reward-notebook",
+      "description": "A recycled paper notebook",
+      "imageUrl": "https://picsum.photos/seed/105/600/400",
+      "imageHint": "notebook"
+    },
+    {
+      "id": "reward-coffee-cup",
+      "description": "A reusable coffee cup",
+      "imageUrl": "https://picsum.photos/seed/106/600/400",
+      "imageHint": "coffee cup"
+    }
+  ]
 }
